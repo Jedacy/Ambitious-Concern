@@ -1,14 +1,18 @@
 import { X, Menu } from "lucide-react"
 import { navItems } from "../Constants"
+import { useState } from "react"
 
 const Navbar = () => {
+    const [mobile, setMobile] = useState(false)
+    const mobileNav = () => setMobile(!mobile)
+
   return (
     <div className="font-Poppins sticky -top-10">
         {/* Banner to host the social icons */}
-        <div className="bg-primary py-2 flex gap-4 justify-between">
+        <div className="bg-primary py-2 flex gap-4 justify-center md:justify-between">
             {/* Social Icons */}
             <div></div>
-            <div className="flex gap-4 items-center justify-center pr-24 text-white">
+            <div className="flex gap-4 items-center justify-center pr-0 md:pr-24 text-white">
                 <a href="#"><img src='/Socials/header/facebook1.png' alt="" /></a>
                 <a href="#"><img src="/Socials/header/twitter.png" alt="" /></a>
                 <a href="#"><img src="/Socials/header/instagram.png" alt="" /></a>
@@ -28,13 +32,16 @@ const Navbar = () => {
                 </a>
 
                 {/* Navigation Links */}
-                <ul className="flex gap-5">
+                <ul className="hidden md:flex gap-5">
                     {navItems.map((item, index) => (
                         <li key={index}>
                         <a href={item.href} className="text-base">{item.name}</a>
                     </li>
                     ))}
                 </ul>
+                <button onClick={mobileNav} className="md:hidden">
+                    {mobile ? <X /> : <Menu />}
+                </button>
             </div>
         </div>
     </div>

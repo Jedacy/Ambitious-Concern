@@ -2,9 +2,9 @@ import PropTypes from "prop-types"
 
 const Button = ({name, link, icon, width}) => {
 
-    let style = "bg-btn-primary text-center py-3 px-5 text-white font-Poppins font-medium rounded-md text-md hover:bg-btn-hover transition-all flex items-center justify-center gap-2 md:gap-4"
+    let style = "bg-btn-primary text-center py-2 md:py-3 px-5 text-sm md:text-base text-white font-Poppins font-medium rounded-md text-md hover:bg-btn-hover transition-all flex items-center justify-center gap-4 md:gap-5"
     if(width){
-        style = "bg-btn-primary text-center py-3 px-5 text-white font-Poppins font-medium rounded-md text-md hover:bg-btn-hover transition-all flex items-center justify-center gap-2 md:gap-4 w-" + width
+        style = "bg-btn-primary text-center py-2 md:py-3 px-5 text-sm md:text-base text-white font-Poppins font-medium rounded-md text-md hover:bg-btn-hover transition-all flex items-center justify-center gap-4 md:gap-5 w-full md:w-" + width
     }
 
   return (
