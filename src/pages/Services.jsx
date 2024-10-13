@@ -1,8 +1,13 @@
 import React from 'react'
+import HeroSer from '../components/Services/HeroSer'
+import Latest from '../components/Services/Latest'
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <div>
+      <HeroSer />
+      <Latest />
+    </div>
   )
 }
 
