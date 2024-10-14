@@ -1,4 +1,3 @@
-import React from 'react'
 import HeroSer from '../components/Services/HeroSer'
 import Latest from '../components/Services/Latest'
 

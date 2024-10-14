@@ -19,6 +19,7 @@ export default {
         "testimonial": "url('/homepage_images/testimonial.png')",
         "service_hero": "url('/services_images/person_computer.png')",
         "steps_to_take": "url('/services_images/steps_to_take.png')",
+        "contact_us": "url('/bg-contact.png')",
       },
 
       colors: {

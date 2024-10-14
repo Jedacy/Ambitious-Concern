@@ -1,7 +1,7 @@
 
 const Footer = () => {
   return (
-    <div className="bg-secondary py-16">
+    <div className="bg-secondary py-16 relative z-8">
       <div className="container mx-auto">
         <div className="flex gap-5 flex-col md:flex-row md:justify-between">
             <img src="/New Logo_transparent.png" alt="" className="w-44 md:h-20"/>
