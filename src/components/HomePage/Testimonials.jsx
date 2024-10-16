@@ -7,9 +7,9 @@ const Testimonials = () => {
 
             <div className='max-w-5xl mx-auto flex flex-col md:flex-row gap-10 md:gap-2'>
                 {/* Holds the testimonial image */}
-                <div className='h-80 md:h-96 w-full md:w-1/2 flex justify-center'>
-                    <div className='overflow-clip h-80 md:h-[400px] bg-primary rounded-tl-full rounded-bl-full rounded-br-full w-96'>
-                        <img src="/testimonial/testimonial1.png" alt="" />
+                <div className='h-72 md:h-96 w-full md:w-1/2 flex justify-center'>
+                    <div className='overflow-clip h-72 md:h-[400px] bg-primary rounded-tl-full rounded-bl-full rounded-br-full w-72 md:w-96'>
+                        <img src="/testimonial/testimonial1.png" alt="" className='h-full w-full object-contain'/>
                     </div>
                 </div>
 

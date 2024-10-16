@@ -19,13 +19,13 @@ export const navItems = [
 
 export const about_list = [
     {
-        name: " Software development to meet specific business needs",
+        name: " Software development is good",
     },
     {
-        name: " Software development to meet specific business needs",
+        name: " Software development is good",
     },
     {
-        name: " Software development to meet specific business needs",
+        name: " Software development is good",
     }
 ]
 

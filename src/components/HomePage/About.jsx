@@ -13,8 +13,8 @@ const About = () => {
             
             {/* Holds the image and content */}
             <div className='mt-5 flex flex-col md:flex-row gap-5'>
-                <div className='bg-primary w-full md:w-1/2 h-[328px] overflow-clip'>
-                    <img src="/about.png" alt="" />
+                <div className='bg-primary w-full md:w-1/2 h-[200px] md:h-[328px] overflow-clip rounded-tl-3xl rounded-br-3xl'>
+                    <img src="/about_page_images/pexels2.jpg" alt="" className="h-full w-full object-cover"/>
                 </div>
                 
                 <div className='w-full md:w-1/2 flex flex-col gap-7 justify-center'>

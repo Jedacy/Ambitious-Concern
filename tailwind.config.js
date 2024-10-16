@@ -34,11 +34,13 @@ export default {
         //Button Colours
         'btn-primary': '#7659F8',//primary state
         'btn-hover': '#6342F8',//hover state
+        'tag-color': "#D9CDFF",
 
         //Text Colours
         'heading': '#553CA3',
         'paragraph': '#000000',//Divide by 74% in the code to reduce opacity
         'text-on-white': '#3E20A1',
+        'tag-text': '#691CD8',
 
       }
     },

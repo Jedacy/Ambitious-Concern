@@ -4,7 +4,7 @@ import { Settings } from "lucide-react"
 
 const Card = ({icon, heading, paragraph}) => {
   return (
-    <div className="flex flex-1 flex-col gap-4 md:gap-10 rounded-xl bg-white p-5 md:p-10 shadow-md shadow-black/20">
+    <div className="flex flex-col gap-4 md:gap-10 rounded-xl bg-white p-5 md:p-10 shadow-md shadow-black/20 md:last:col-span-2 lg:last:col-span-1">
         <div className="flex flex-row md:flex-col items-center gap-2 md:gap-6">
             {<Settings className="w-9 h-9 md:w-14 md:h-14"/>?? icon}
             

@@ -64,3 +64,48 @@
       padding-left: 3rem /* 96px */;
   }
 }
+
+@keyframes animateScroll {
+  to{
+    transform: translateX(calc(-50% - (1.25rem)));
+  }
+}
+
+.animate-scroll{
+  width: max-content;
+  animation: animateScroll 40s linear infinite;
+}
+
+@keyframes animateScrollAlt {
+  to{
+    transform: translateX(calc(-50% - (1.25rem)));
+  }
+}
+
+.animate-scroll-alt{
+  width: max-content;
+  animation: animateScrollAlt 20s alternate-reverse linear infinite;
+}
+
+@keyframes animateIn {
+  from{
+    transform: translateX(100%);
+  }
+  to{
+    transform: translateX(10%);
+  }
+}
+
+.animate-in{
+  animation: animateIn 1s ease-in-out 1 forwards;
+}
+
+@keyframes animateOut {
+  to{
+    transform: translateX(100%);
+  }
+}
+
+.animate-out{
+  animation: animateOut 1s ease-in-out 1 forwards;
+}

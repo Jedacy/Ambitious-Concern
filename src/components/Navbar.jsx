@@ -7,7 +7,8 @@ const Navbar = () => {
     const mobileNav = () => setMobile(!mobile)
 
   return (
-    <div className="font-Poppins sticky -top-10 z-10">
+    <>
+    <div className="font-Poppins sticky -top-10 z-20">
         {/* Banner to host the social icons */}
         <div className="bg-primary py-2 flex gap-4 justify-center md:justify-between">
             {/* Social Icons */}
@@ -43,9 +44,9 @@ const Navbar = () => {
                     {mobile ? <X /> : <Menu />}
                 </button>
                 {mobile && (
-                    <ul className="absolute top-16 bg-white left-0 text-blue-950 py-4 w-full flex flex-col gap-1 shadow-lg">
+                    <ul className={`fixed top-16 z-10 bg-white left-0 text-blue-950 py-4 animate-in w-full flex flex-col gap-1 h-screen shadow-lg`}>
                         {navItems.map((item, index) => (
-                            <li key={index} className="w-full py-1 border-b-2 border-black/10">
+                            <li key={index} className="w-full py-1">
                                 <a href={item.href} className="inline-block text-base text-center  w-full py-2">{item.name}</a>
                             </li>
                         ))}
@@ -54,6 +55,8 @@ const Navbar = () => {
             </div>
         </div>
     </div>
+   
+    </>
   )
 }
 
