@@ -14,7 +14,7 @@ const Contact = () => {
           
       </div>
 
-      <div className='bg-contact_us bg-cover bg-no-repeat h-auto md:h-[80vh] lg:h-[90vh] bg-left'>
+      <div className='bg-contact_us bg-cover bg-no-repeat h-auto md:h-auto bg-left'>
         <div className="container mx-auto flex flex-col md:flex-row gap-5 py-20">
 
           <div className='w-full md:w-1/2 flex flex-col justify-between items-center md:items-start gap-5 relative'>
@@ -26,7 +26,7 @@ const Contact = () => {
               </div>
 
               <div className='pt-1 md:pt-5'>
-                <img src="/asiedu.png" alt="" className='md:h-[400px] lg:h-[500px] object-cover hidden md:block '/>
+                {/* <img src="/asiedu.png" alt="" className='md:h-[400px] lg:h-[500px] object-cover hidden md:block '/> */}
               </div>
             </div>
 

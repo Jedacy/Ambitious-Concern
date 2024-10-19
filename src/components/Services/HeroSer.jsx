@@ -1,3 +1,4 @@
+import { services_list } from "../../Constants"
 import Card from "./Card"
 
 
@@ -14,20 +15,21 @@ const HeroSer = () => {
             
         </div>
 
-        <div className="container mx-auto pt-36">
-            <p className="Poppins font-bold text-sm md:text-lg text-center">What we Provide?</p>
-            <h2 className="font-Ronoto-Slab text-2xl md:text-3xl font-bold max-w-[20ch] mx-auto pt-4 text-heading text-center">Custom software, web development, analytics.</h2>
+        <div className="bg-[#F9F8FF]">
+            <div className="container mx-auto py-36">
+                <p className="Poppins font-bold text-sm md:text-lg text-center">What we Provide?</p>
+                <h2 className="font-Ronoto-Slab text-2xl md:text-3xl font-bold max-w-[20ch] mx-auto pt-4 text-heading text-center">Custom software, web development, analytics.</h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-16 pt-20">
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-8 md:gap-y-16 pt-20">
+                    {services_list.map((item, index)=>(
+                        <Card key={index} heading={item.name} paragraph={item.description} href={item.href}/> 
+                    ))}
+                    
+                </div>
+                
             </div>
-            
         </div>
+        
     </div>
   )
 }

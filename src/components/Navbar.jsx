@@ -14,11 +14,10 @@ const Navbar = () => {
             {/* Social Icons */}
             <div></div>
             <div className="flex gap-4 items-center justify-center pr-0 md:pr-24 text-white">
-                <a href="#"><img src='/Socials/header/facebook1.png' alt="" /></a>
-                <a href="#"><img src="/Socials/header/twitter.png" alt="" /></a>
-                <a href="#"><img src="/Socials/header/instagram.png" alt="" /></a>
-                <a href="#"><img src="/Socials/header/linkedin.png" alt="" /></a>
-                <a href="#"><img src="/Socials/header/youtube.png" alt="" /></a>
+                <a href="https://www.facebook.com/asiedu.works/"><img src='/Socials/header/facebook1.png' alt="" /></a>
+                <a href="https://x.com/Ambitious__C"><img src="/Socials/header/twitter.png" alt="" /></a>
+                <a href="https://www.instagram.com/ambitious.concern?igsh=MWt0ejNuanBtbGh4dw=="><img src="/Socials/header/instagram.png" alt="" /></a>
+                <a href="https://www.linkedin.com/company/ambitious-concern"><img src="/Socials/header/linkedin.png" alt="" /></a>
             </div>
         </div>
 
@@ -44,7 +43,7 @@ const Navbar = () => {
                     {mobile ? <X /> : <Menu />}
                 </button>
                 {mobile && (
-                    <ul className={`fixed top-16 z-10 bg-white left-0 text-blue-950 py-4 animate-in w-full flex flex-col gap-1 h-screen shadow-lg`}>
+                    <ul className={`absolute top-16 z-10 bg-white left-0 text-blue-950 py-4  w-full flex flex-col gap-1 h-[60vh] shadow-lg`}>
                         {navItems.map((item, index) => (
                             <li key={index} className="w-full py-1">
                                 <a href={item.href} className="inline-block text-base text-center  w-full py-2">{item.name}</a>

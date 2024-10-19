@@ -10,6 +10,9 @@
   }
   
 } */
+ *{
+  scroll-behavior: smooth;
+ }
 .container {
   width: 100%;
   margin-right: auto;
@@ -85,27 +88,4 @@
 .animate-scroll-alt{
   width: max-content;
   animation: animateScrollAlt 20s alternate-reverse linear infinite;
-}
-
-@keyframes animateIn {
-  from{
-    transform: translateX(100%);
-  }
-  to{
-    transform: translateX(10%);
-  }
-}
-
-.animate-in{
-  animation: animateIn 1s ease-in-out 1 forwards;
-}
-
-@keyframes animateOut {
-  to{
-    transform: translateX(100%);
-  }
-}
-
-.animate-out{
-  animation: animateOut 1s ease-in-out 1 forwards;
 }

@@ -19,11 +19,10 @@ const Footer = () => {
                 <div className="flex gap-4 items-center ">
                   
                   <div className="flex gap-2">
-                    <a href="#"><img src='/Socials/footer/facebook.png' alt="" /></a>
-                    <a href="#"><img src="/Socials/footer/twitter.png" alt="" /></a>
-                    <a href="#"><img src="/Socials/footer/instagram.png" alt="" /></a>
-                    <a href="#"><img src="/Socials/footer/linkedin.png" alt="" /></a>
-                    <a href="#"><img src="/Socials/footer/youtube.png" alt="" /></a>
+                    <a href="https://www.facebook.com/asiedu.works/"><img src='/Socials/footer/facebook.png' alt="" /></a>
+                    <a href="https://x.com/Ambitious__C"><img src="/Socials/footer/twitter.png" alt="" /></a>
+                    <a href="https://www.instagram.com/ambitious.concern?igsh=MWt0ejNuanBtbGh4dw=="><img src="/Socials/footer/instagram.png" alt="" /></a>
+                    <a href="https://www.linkedin.com/company/ambitious-concern"><img src="/Socials/footer/linkedin.png" alt="" /></a>
                   </div>
                 </div>
             </div>

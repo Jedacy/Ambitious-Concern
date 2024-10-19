@@ -13,12 +13,12 @@ const About = () => {
             
             {/* Holds the image and content */}
             <div className='mt-5 flex flex-col md:flex-row gap-5'>
-                <div className='bg-primary w-full md:w-1/2 h-[200px] md:h-[328px] overflow-clip rounded-tl-3xl rounded-br-3xl'>
+                <div className='bg-primary w-full md:w-1/2 h-[200px] md:h-auto overflow-clip rounded-tl-3xl rounded-br-3xl'>
                     <img src="/about_page_images/pexels2.jpg" alt="" className="h-full w-full object-cover"/>
                 </div>
                 
                 <div className='w-full md:w-1/2 flex flex-col gap-7 justify-center'>
-                    <p className='font-Ronoto-Slab font-bold leading-5 text-heading text-base md:text-lg'>We are a dynamic software development company focused on innovation and excellence. Our mission is to transform ideas into impactful digital solutions.</p>
+                    <p className='font-Ronoto-Slab font-bold leading-1 text-heading text-base md:text-lg'>Ambitious Concern is a dynamic company that merges creativity and technology. We offer a range of services, including data entry, web development, UI/UX design, and visual production, empowering businesses to achieve their goals and drive impactful growth.</p>
 
                     <ul>
                         {about_list.map((item, index) => (
