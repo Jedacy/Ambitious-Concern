@@ -57,8 +57,8 @@ export const services_list = [
     {
         icon: "3",
         href:"",
-        name: "Virtual Assistant",
-        description: "Providing professional virtual assistance to help manage administrative tasks, allowing you to focus on what matters most.",   
+        name: "Branding & Design",
+        description: "Providing branding solutions and design assistance to help build your company's identity and create meaningful connections",   
     },
     {
         icon: "3",

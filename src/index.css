@@ -68,6 +68,18 @@
   }
 }
 
+@keyframes animate-in {
+  from{
+    transform: translateX(100%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+.animate-in{
+  animation: animate-in .5s linear forwards;
+}
+
 @keyframes animateScroll {
   to{
     transform: translateX(calc(-50% - (1.25rem)));

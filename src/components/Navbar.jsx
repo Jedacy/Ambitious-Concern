@@ -32,10 +32,10 @@ const Navbar = () => {
                 </a>
 
                 {/* Navigation Links */}
-                <ul className="hidden md:flex gap-5">
+                <ul className="hidden md:flex gap-5 relative">
                     {navItems.map((item, index) => (
-                        <li key={index}>
-                        <a href={item.href} className="text-base">{item.name}</a>
+                        <li key={index} className="relative">
+                        <a href={item.href} className="text-base before:content-[''] before:h-[2px] before:w-0 before:rounded-full before:bg-primary before:absolute before:bottom-0 before:left-0 before:hover:w-full before:transition-all duration-1000">{item.name}</a>
                     </li>
                     ))}
                 </ul>
@@ -43,7 +43,7 @@ const Navbar = () => {
                     {mobile ? <X /> : <Menu />}
                 </button>
                 {mobile && (
-                    <ul className={`absolute top-16 z-10 bg-white left-0 text-blue-950 py-4  w-full flex flex-col gap-1 h-[60vh] shadow-lg`}>
+                    <ul className={`absolute top-16 z-10 bg-white left-0 text-blue-950 py-4 w-full flex flex-col gap-1 h-screen shadow-lg`}>
                         {navItems.map((item, index) => (
                             <li key={index} className="w-full py-1">
                                 <a href={item.href} className="inline-block text-base text-center  w-full py-2">{item.name}</a>
